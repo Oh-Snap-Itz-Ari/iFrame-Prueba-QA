@@ -14,12 +14,10 @@ public class Page_JQuery{
     WebDriver driver;
 
     @FindBy(xpath = "/html/body/div/div[2]/div/div[1]/iframe") WebElement iFrame; // Se declaran a través de la utilización de FindBy (Page Factory)
-
     @FindBy(id = "draggable") WebElement Draggable;
     @FindBy(id = "droppable") WebElement Droppable;
     @FindBy(xpath = "//a[@href='https://jqueryui.com/button/'][contains(.,'Button')]") WebElement Button_Page;
     @FindBy(xpath = "//a[@href='https://jqueryui.com/about/'][contains(.,'About')]") WebElement About_Page;
-    @FindBy(xpath = "//button[@class='ui-button ui-widget ui-corner-all'][contains(.,'A button element')]") WebElement btn_Element;
     @FindBy(xpath = "//input[@type='search']") WebElement Search;
 
     public void StartDriver(WebDriver driver){
@@ -54,10 +52,6 @@ public class Page_JQuery{
 
     public void ClickButtonPage(){
         Button_Page.click();
-    }
-
-    public void ClickButton(){
-        btn_Element.click();
     }
 
     public void WriteSearch(String search){
