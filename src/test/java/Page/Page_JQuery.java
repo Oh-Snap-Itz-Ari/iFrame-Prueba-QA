@@ -16,8 +16,8 @@ public class Page_JQuery{
     @FindBy(xpath = "/html/body/div/div[2]/div/div[1]/iframe") WebElement iFrame; // Se declaran a través de la utilización de FindBy (Page Factory)
     @FindBy(id = "draggable") WebElement Draggable;
     @FindBy(id = "droppable") WebElement Droppable;
-    @FindBy(xpath = "//a[@href='https://jqueryui.com/button/'][contains(.,'Button')]") WebElement Button_Page;
-    @FindBy(xpath = "//a[@href='https://jqueryui.com/about/'][contains(.,'About')]") WebElement About_Page;
+    @FindBy(xpath = "//a[contains(.,'Button')]") WebElement Button_Page;
+    @FindBy(xpath = "//a[contains(.,'About')]") WebElement About_Page;
     @FindBy(xpath = "//input[@type='search']") WebElement Search;
 
     public void StartDriver(WebDriver driver){
