@@ -40,7 +40,7 @@ public class BrowserManager {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(url);
-        Reporter.log("- Se ingresa al URL en el navegador "+type+" y se ingresa a la URL: "+url, true);
+        Reporter.log("- Se ingresa al URL en el navegador "+type+" y se va a la URL: "+url, true);
         return driver;
     }
 }
