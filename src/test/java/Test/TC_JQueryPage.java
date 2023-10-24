@@ -18,5 +18,6 @@ public class TC_JQueryPage {
         obj.GoButtonPage();
         obj.SearchJQueryPage("Test");
         obj.GoAboutPage();
+        obj.CloseDriver(driver);
     }
 }

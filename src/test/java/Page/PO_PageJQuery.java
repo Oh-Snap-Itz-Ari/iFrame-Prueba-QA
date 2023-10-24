@@ -18,6 +18,10 @@ public class PO_PageJQuery {
         PageFactory.initElements(driver, this); // Se envia el driver y la clase que estamos trabajando (esta)
     }
 
+    public void CloseDriver(WebDriver driver){
+        driver.close();
+    }
+
     @FindBy(xpath = "/html/body/div/div[2]/div/div[1]/iframe") WebElement iFrame; // Se declaran a través de la utilización de FindBy (Page Factory)
     @FindBy(id = "draggable") WebElement Draggable;
     @FindBy(id = "droppable") WebElement Droppable;
